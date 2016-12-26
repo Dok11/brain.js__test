@@ -6,29 +6,19 @@ var net		= new brain.NeuralNetwork();
 
 var trainingData = [];
 
-walk.walkSync('./data-test', function(basedir, filename, stat) {
-    trainingData = trainingData.concat(require('./data-test/'+filename));
-	
-	console.log(trainingData.length);
+walk.walkSync('./data', function(basedir, filename, stat) {
+    trainingData = trainingData.concat(require('./data/'+filename));
 
 });
 
 var trainResult = net.train(
-	trainingData, {
-		hiddenLayers: [8, 8, 8, 8],
-		errorThresh: 0.005,  // error threshold to reach
-		iterations: 1000,   // maximum training iterations
-		learningRate: 0.1,    // learning rate
-		log: true,
-		logPeriod: 10
-	}
+	trainingData
 );
 
 console.log(trainResult);
 
 
-
-// Запишем нейросеть в файл
+// write nn to file
 var json = net.toJSON();
 
 fs.writeFile("generated_nn.json", JSON.stringify(json), function(err) {

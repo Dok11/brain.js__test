@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Dok11/brain.js__test#readme",
   "dependencies": {
+    "brain.js": "git+https://github.com/harthur-org/brain.js.git",
+    "fs": "0.0.1-security",
     "fs-walk": "0.0.1"
   }
 }
