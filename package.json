@@ -1,0 +1,23 @@
+{
+  "name": "brain.js__test",
+  "version": "1.0.0",
+  "description": "Testing use brain.js lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dok11/brain.js__test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dok11/brain.js__test/issues"
+  },
+  "homepage": "https://github.com/Dok11/brain.js__test#readme",
+  "dependencies": {
+    "fs-walk": "0.0.1"
+  }
+}
