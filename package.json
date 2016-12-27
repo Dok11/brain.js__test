@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Dok11/brain.js__test#readme",
   "dependencies": {
-    "brain.js": "git+https://github.com/harthur-org/brain.js.git",
+    "brain.js": "git+https://github.com/harthur-org/brain.js.git#rnn-train-pattern",
     "fs": "0.0.1-security",
     "fs-walk": "0.0.1"
   }

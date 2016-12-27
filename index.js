@@ -1,7 +1,8 @@
 var fs		= require('fs');
 var walk	= require('fs-walk');
 var brain	= require('brain.js');
-var net		= new brain.NeuralNetwork();
+var net		= new brain.recurrent.LSTM();
+
 
 
 var trainingData = [];
